@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<link rel="stylesheet" type="text/css" href="log.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".login-form").hide();
+			$(".login").css("background","none");
+			$(".login").click(function(){
+                $(".signup-form").hide();
+                $(".login-form").show();
+                $(".signup").css("background", "none");
+                $(".login").css("background", "#fff");
+            });
+
+            $(".signup").click(function(){
+                $(".signup-form").show();
+                $(".login-form").hide();
+                $(".login").css("background", "none");
+                $(".signup").css("background", "#fff");
+            });
+
+            $(".btn").click(function(){
+                $(".input").val("");
+            });
+        });
+	</script>
+</head>
+<body>
+	 <div class="wrapper">
+    <div class="container">
+      
+      <div class="signup">Sign Up</div>
+      <div class="login">Log In</div>
+      
+       <div class="signup-form">
+          <input type="email" class="input" placeholder="Your Email Address" name="email" required data-message="This field cannot be empty"><br />
+          <input type="text" class="input" placeholder="Choose a Username" name="username" required data-message="This field cannot be empty"><br />
+          <input type="password" class="input" placeholder="Choose a Password" name="password" required data-message="This field cannot be empty"><br />
+          <div class="btn">Create account</div>
+       </div>
+      
+      <div class="login-form">
+          <input type="text" placeholder="Email or Username" class="input" required><br />
+          <input type="password" placeholder="Password" class="input" required><br />
+          <div class="btn">log in</div>
+          <span><a href="#">I forgot my username or password.</a></span>
+       </div>
+      
+    </div>
+  </div>
+
+
+
+<div class="youtube">
+  <a href="pro1.html" target="_blank">by Cosmos3Dzz</a>
+</div>
+
+</body>
+</html>
